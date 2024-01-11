@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    overflow-x: hidden;
+   }
+.logo-img{
+    width: 70px;
+    height: 80px;
+    transform: translate(135px, -30px);
+  }
+ul{
+    display: flex;
+    transform: translate(800px, 20px);
+}
+ul a{
+    display: block;
+    padding: 0.3rem 0;
+    min-width: 120px;
+    text-align: center;
+    transition: all 1s;
+    position: relative;
+}
+ul li a{
+      text-decoration: none;
+      color: #9E91B7;
+      cursor: pointer;
+      font-family: "BEYNO", sans-serif;
+}
+li{
+  list-style: none;
+}
+li a:hover{
+    color: #3D2DA6;
+}
+ul a::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 10px;
+    bottom: -6px;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s ease;
+    transform: scaleX(0);
+    transition: transform .3s;
+  }
+  
+  ul a:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left;
+  }
+
+  /*resaux sociaux */
+  .ReseauSociaux{
+    display: flex;
+    flex-direction: column;
+    width: 2%;
+    position: fixed;
+    gap: 5px;
+    padding: 0 3px;
+    border-left: 3px solid #9E91B7;
+    border-right: 3px solid #9E91B7;
+    margin-left: 5%;
+    padding-top: 22%;
+
+  }
+
+  .bi:hover{
+    width: 24px;
+    height: 24px;
+    color: #7b0bc5;
+  }
+
+  /*style de image fond*/
+  .imag-fond{
+    transform: translate(-150px, 80px);
+    width: 720px;
+    height: 550px;
+  }
+
+  /*slider*/
+  .slider{
+    height: 300px;
+    width: 2000px;
+    transform: translate(-1450px, 650px);
+    background-color: #071838fa;
+    display: flex;
+    position: relative;
+    color: #fff;
+  }
+  .slid{
+    width: 50%;
+    height: 300px;
+    margin-right: 280px;
+    transition: transform 0.3s; /* Animation de transition fluide */
+  }
+.slides-container {
+    display: flex;
+    transition: transform 0.6s;
+    transform: translateX(0); /* Commencez par afficher la première image */
+}
+
+/*image de slide*/
+  .sld-image{
+    margin-right: 0;
+    margin-top: -20px;
+    width: 295px;
+    height: 341px;
+  }
+/*paragraphe de slide*/
+  .par {
+   transform: translate(310px, -300px);
+   width: 250px;
+   float: left;
+}
+  
+/*boutton flech*/
+.prev, .next {
+    color: #9b97a3;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 800px;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+
+
+
+h1{
+    white-space: nowrap;
+    transform: translate(-220px, 200px);
+    font-family: "Panthera";
+    font-size: 50px;
+    color: rgba(173, 170, 175, 0.849);
+}
+.wak{
+    font-family: "BEYNO";
+    color: rgba(137, 127, 145, 0.849);
+    transform: translate(-180px, 190px);
+    font-size: 25px;
+}
+h3{
+    font-family: "BEYNO";
+    color: #733891e7;
+}
+.ac-par{
+    transform: translate(-180px, 190px);
+    color: #847e86d5;
+}
+/*boutton voir plus*/
+.btn-vr-pls{
+    transform: translate(-80px, 190px);
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.btn-vr-pls a{
+    text-decoration: none;
+}
+.btn-vr-pls:hover{
+    height: 33px;
+    width: 104px;
+    background-color: #28163ad0;
+}
+
+/*paragraphe de naissance de prince */
+.naiss{
+    color: white;
+    transform: translate(-3380px, 1100px);
+    min-width: 600px;
+}
+.pt{
+    font-size: small;
+}
+
+/*t'chala status*/
+.status{
+    background-color: rgb(235, 229, 229);
+    min-width: 350px;
+    max-height: 560px;
+    transform: translate(-3250px, 1200px);
+    border-radius: 10px;
+}
+.status-img{
+    margin-top: -190px;
+    margin-left: 35px;
+    border-radius: 5px;
+    width: 280px;
+    height: 400px;
+}
+.tchala-titre{
+  font-family: sans-serif;
+  margin-left: 145px ;
+  margin-top: 5px;
+}
+.boutton{
+  margin-left: 22px;
+}
+.btn-status-1{
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 100px;
+  background-color: #37289c;
+  cursor: pointer;
+}
+.btn-status-2{
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 120px;
+  margin-left: 10px;
+  background-color: #37289c;
+  cursor: pointer;
+}
+.btn-status-3{
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  background-color: #37289c;
+  cursor: pointer;
+}
+/*image avatar */
+.fns{
+  width: 21rem;
+  height: 13rem;
+  position: absolute;
+  transform: translate(55rem, 116rem);
+
+}
+/*Formulaire */
+.for{
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  margin-top: 137.5rem;
+  background-color: #49376bbd;
+}
+.imgFrmlr{
+  width: 100%;
+  height: 700px;
+}
+.formulaireChamps{
+  width: 500px;
+  height: 35rem;
+  background-color: aliceblue;
+  margin-top: -40rem;
+  margin-left: 26rem;
+  border-radius: 10px;
+}
+.lesInput{
+  padding-left: 100px;
+  padding-top: 10px;
+
+}
+.inptFrmlr{
+  width: 18rem;
+  height: 40px;
+  border: none;
+  border: solid 1px  rgb(68, 67, 67);
+  border-radius: 15px;
+  background-color: rgba(208, 217, 231, 0.288);
+  outline: none;
+  margin-bottom: 1rem;
+}
+.inptFrmlr::placeholder{
+  color: rgb(72, 3, 78);
+}
+.inpText{
+  width: 18rem;
+  height: 8rem;
+  border: none;
+  border: solid 1px  rgb(68, 67, 67);
+  border-radius: 15px;
+  background-color: rgba(208, 217, 231, 0.288);
+  outline: none;
+  margin-bottom: 1rem;
+}
+.inpText::placeholder{
+  color: rgb(72, 3, 78);
+}
+.btn-envoyer{
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 20px;
+  color: #3D2DA6;
+  cursor: pointer;
+  margin-left: 6rem;
+}
+.btn-envoyer:hover{
+ box-shadow: #6e1e1e;
+}
+
+/* Footer */
+
+footer {
+  min-width: 1310px;
+  max-height: 300px;
+  background-color: rgba(57, 44, 68, 0.5);
+  color: white;
+  padding: 20px; 
+  position: absolute;
+  display: flex;
+  margin-top: 180rem;
+}
+
+.footer div{
+   display: inline-table;
+   padding-right: 200px;
+   transform: translate(270px);
+  }
+  .reseau{
+    margin-left: -18rem;
+
+  }
+  .bi{
+    padding-left: 8px;
+  }
