@@ -70,6 +70,10 @@ ul a::after {
 
   }
 
+  .bi{
+    margin-left: -5px;
+  }
+
   .bi:hover{
     width: 24px;
     height: 24px;
